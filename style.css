@@ -1,0 +1,985 @@
+* {
+    margin: auto;
+    padding: auto;
+}
+
+:root {
+    --primariColor_0: #130296bd;
+    --primariColor_1: #240a54;
+    --Logo: url(./IMG/logo.jpeg);
+    --LogoTag: url(./IMG/logoTag.jpeg);
+    --LogoTagMobileSize: url(./IMG/mobileSize.png);
+    --LogoTagDestopSize: url(./IMG/destop\ size.png);
+}
+
+body {
+    background-image: radial-gradient(var(--primariColor_0), var(--primariColor_1));
+    height: 100vh;
+    overflow: hidden auto;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.sectionBox {
+    width: 80%;
+    margin: 2vh auto;
+}
+
+.PsectionBox {
+    height: 15vh;
+    background: linear-gradient(180deg, #f3f3ff, transparent);
+    border-radius: 25px 25px 0 0;
+    display: flex;
+    align-items: baseline;
+}
+
+.PBall {
+    width: 10vw;
+    height: 10vw;
+    background: blue;
+    border-radius: 50%;
+    margin: 7vh 1vh 1vh 5vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 7vh;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
+.pDisplayName {
+    margin: 8vh auto auto 5vh;
+}
+
+.highligth {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: x-large;
+    text-transform: capitalize;
+
+}
+
+.active {
+    background-color: greenyellow;
+}
+
+.accountType {
+    font-size: small;
+    padding: 0.15vh 0.5vh;
+    text-transform: math-auto;
+    font-family: monospace, sans-serif;
+    border-radius: 10px;
+    color: #000000;
+    width: fit-content;
+}
+
+.actionSection {
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+    grid-template-columns: auto auto auto;
+    transition: all 200ms ease-in-out;
+}
+
+.AccessBtn {
+    margin: auto 2vh;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    padding: 1vh 2vh;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: medium;
+    font-family: sans-serif;
+}
+
+.AccessBtn i {
+    margin-right: 1vh;
+}
+
+.selectBtn {
+    border-color: #8e58dfa3;
+    color: #ac84ff;
+}
+
+.DetaShowSection {
+    background: #8239e22e;
+    padding: 1vh;
+    height: auto;
+    border-radius: 10px;
+    margin: 3vh auto;
+    width: 90%;
+}
+
+.AccountSection {
+    padding: 2vh 1vh;
+    grid-template-columns: auto auto auto;
+    gap: 3vh;
+}
+
+.requadBox {
+    padding: 1vh .5vh;
+    width: 85%;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.lable {
+    color: white;
+    display: block;
+    padding: 0.5vh 1vh;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: small;
+    font-family: sans-serif;
+}
+
+.lable i {
+    margin-right: 1vh;
+}
+
+.displayDeta {
+    color: white;
+    font-size: small;
+    text-transform: capitalize;
+    margin: 0.2vh auto .3vh 3vh;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+input,
+.inputBox {
+    width: 80%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    color: #42239dad;
+    font-size: smaller;
+    background: #6a5acd70;
+    outline: none;
+    border: none;
+    padding: .5vh .25vh;
+    border-radius: 6px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+input:focus {
+    background-color: #8172e252;
+}
+
+.hide {
+    display: none;
+}
+
+.PaymentDeta {
+    width: 100%;
+    overflow: clip;
+    border-radius: 10px;
+    padding: 1vh .5vh;
+}
+
+table,
+tbody,
+thead {
+    border-collapse: collapse;
+}
+
+.showColors {
+    background-color: transparent;
+}
+
+.PaymentDeta tbody {
+    background-color: rgba(255, 255, 255, 0.329);
+}
+
+.PaymentDeta thead {
+    background-color: #6a28d182;
+}
+
+.PaymentDeta td,
+.PaymentDeta th {
+    padding: 1vh .5vh;
+}
+
+.PaymentDeta td {
+    text-align: center;
+    font-size: small;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+.PaymentDeta th {
+    font-size: medium;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: white;
+}
+
+.FeaturesSection {
+    grid-template-columns: auto auto auto;
+    gap: 2vh;
+    padding: 2vh 1vh;
+}
+
+.featureBox {
+    padding: 1.5vh 1vh;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.FearureSubTitleSection {
+    width: 70%;
+}
+
+.FearureTitle {
+    color: white;
+    font-size: medium;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: .5vh 1vh;
+}
+
+.FearureSubTitle {
+    color: rgba(255, 255, 255, 0.527);
+    font-size: small;
+    padding: .5vh 1vh;
+    text-transform: capitalize;
+}
+
+.iconBox {
+    background-color: white;
+    width: 5vh;
+    height: 5vh;
+    margin: auto;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navsectioin {
+    height: 5vh;
+    background: #eeeeee1a;
+    align-items: center;
+    justify-content: left;
+    padding-left: 2vh;
+}
+
+.BackBtn {
+    margin: 0;
+}
+
+.BackBtn i {
+    margin-right: 1.5vh;
+    transition: all 200ms ease-in-out;
+}
+
+.FormeSection {
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.formeContain {
+    width: 25%;
+    padding: 1vh;
+    border-top: 7px solid #6e00ff;
+    background: #5b4cbcc9;
+    border-radius: 10px;
+}
+
+.btnPrimary {
+    background-color: #580ee1e8;
+    width: fit-content;
+    padding: .5vh 1vh;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.FormeLogo {
+    width: 10vh;
+    height: 10vh;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    margin: 2vh auto;
+    background-image: var(--Logo);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.FormeTitle {
+    font-size: larger;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    background: linear-gradient(46deg, #292eb5, #5511af);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.rquadSection {
+    padding: 1vh .5vh;
+    margin: 1vh auto;
+}
+
+.Submit_Btn {
+    width: 50%;
+    text-align: center;
+    transition: all 600ms ease-in-out;
+    text-transform: capitalize;
+}
+
+.Clear_btn {
+    text-align: center;
+    width: 20%;
+    background-color: transparent;
+    border: 2px solid #580ee1e8;
+    color: #580ee1e8;
+    text-transform: capitalize;
+}
+
+.Submit_Btn:hover {
+    background-color: transparent;
+    border: 2px solid #580ee1e8;
+    color: #580ee1e8;
+}
+
+.RemindBox {
+    position: absolute;
+    top: 0vh;
+    right: -100vh;
+    background: white;
+    width: 30%;
+    border-radius: 5px;
+    overflow: clip;
+}
+
+.Progresbar {
+    height: .5vh;
+    background: transparent;
+    transition: all 1s ease-in-out;
+    width: 100%;
+    margin: 0;
+}
+
+.TextSection {
+    padding: 1vh .5vh;
+    width: fit-content;
+}
+
+.TextSection i {
+    margin-right: 1vh;
+}
+
+.RememberMessage {
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-size: smaller;
+}
+
+.btnPrimary i {
+    margin-right: .5vh;
+}
+
+.gapS {
+    font-size: small;
+    font-weight: bold;
+    color: white;
+    width: fit-content;
+    display: block;
+    margin: .3vh auto;
+}
+
+.BackBtn:hover i {
+    transform: translateX(-5px);
+}
+
+.displayBoxSection {
+    height: 95vh;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: auto auto auto auto;
+    gap: 3vh;
+    align-content: center;
+}
+
+.MainTagBox {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: #00008078;
+}
+
+.gridBox {
+    border: 1px solid rgba(255, 255, 255, 0.199);
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    padding: 1vh;
+}
+
+.TextSection .FearureSubTitle {
+    padding-top: 0.25vh;
+    font-size: x-small;
+    text-align: center;
+}
+
+.TextSection .FearureTitle {
+    padding-bottom: 0;
+}
+
+.Deta_Value {
+    font-size: smaller;
+    text-align: center;
+    font-family: fantasy;
+    color: aliceblue;
+    margin-bottom: 1vh;
+    transition: all 400ms ease-in-out;
+}
+
+.MainTagBox table {
+    margin: 1vh auto;
+}
+
+.detaTabale_Notice {
+    font-size: smaller;
+    color: #d2c3af;
+    text-transform: capitalize;
+    text-align: right;
+    font-family: math, sans-serif;
+}
+
+.MainTagBox table {
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.MainTagBox table th {
+    background-color: #6a28d182;
+    font-size: smaller;
+    font-family: monospace;
+    text-transform: capitalize;
+    color: #bed7ea;
+    padding: .5vh 0;
+}
+
+.MainTagBox table tr {
+    background-color: #ffffff8a;
+    font-size: smaller;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.headerSection {
+    padding: 2vh 2vh 2vh 0;
+}
+
+.HederLogoSection {
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.HederLogo {
+    width: 23%;
+    height: 5vh;
+    background-image: var(--LogoTagDestopSize);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.HederLogoName {
+    background-color: gray;
+    font-size: x-large;
+    text-transform: capitalize;
+    color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+
+.HederLogoName .subTitle {
+    font-size: x-small;
+    line-height: 1.4vh;
+    text-align: right;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+}
+
+.NavigationList {
+    display: ruby;
+    list-style: none;
+}
+
+.selectLink {
+    border-bottom: 5px solid navy !important;
+}
+
+.Link,
+.ImergencyExit {
+    padding: .5vh 1vh;
+    margin: .25vh 1vh;
+    text-transform: uppercase;
+    font-family: math;
+    color: white;
+    font-size: smaller;
+    border: 3px solid transparent;
+    transition: all 400ms ease-in-out;
+}
+
+.NavigationHambangle {
+    display: none !important;
+}
+
+.copyrigth {
+    font-family: cursive;
+    text-align: center;
+    font-size: small;
+    text-transform: capitalize;
+    color: white;
+    margin: 1vh auto;
+    width: fit-content;
+}
+
+.footerSection {
+    background: #808080b8;
+    padding: 1vh 2vh;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.iMEJANCYUSEBTNSECTION {
+    display: none;
+}
+
+.detaEnterSection {
+    padding: 1vh;
+    width: 90%;
+    margin: 5vh auto;
+}
+
+.detaEnterSection th {
+    padding: .5vh 1vh;
+}
+
+.detaEnterSection thead {
+    background-color: gray;
+}
+
+.detaEnterSection table {
+    width: 80%;
+    background: papayawhip;
+}
+
+.RequadBoxChangeSection {
+    width: 35%;
+    padding: 1vh 1vh;
+    margin-left: auto;
+    margin-right: 0vh;
+}
+
+.EditDeta {
+    grid-template-columns: auto auto;
+}
+
+.EditDeta .requadBox {
+    padding: 2vh .5vh;
+}
+
+.EditDeta input {
+    margin: .5vh auto;
+}
+
+.AccountSectionoTHER {
+    grid-template-columns: auto auto;
+    gap: 1vh 1vh;
+    padding: 2vh 2vh;
+}
+
+.otherRequad {
+    border: 2px solid #ffffff80;
+    border-radius: 10px;
+    padding: .5vh 1vh;
+    width: 80%;
+}
+
+.FormeContain {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.specialType {
+    display: flex;
+}
+
+.specialLable {
+    display: flex;
+}
+
+.specialLinks {}
+
+.specialUse {}
+
+.ProfilePicBoxSection {
+    border: 2px dashed rgba(0, 0, 0, 0.658);
+    padding: 2vh 0vh;
+    background: #ffffff30;
+    align-items: center;
+    justify-content: center;
+    height: 17vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ProfilePicBox {
+    width: 50%;
+}
+
+.profileImageControllSection {
+    padding: 1vh .5vh;
+}
+
+.ProfilePicBoxMessageBox {
+    color: rgba(255, 255, 255, 0.521);
+    text-align: center;
+    text-transform: capitalize;
+    font-family: monospace, sans-serif;
+    font-size: smaller;
+    padding: 1vh 2vh;
+}
+
+.NavigationListContain {
+    margin-right: 2vh;
+}
+
+.passwordChangeBox .requadBox {
+    border-color: transparent;
+    margin: 0vh auto 1vh auto;
+}
+
+.passwordTitleSection {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 1vh 1vh;
+    font-size: larger;
+    color: white;
+}
+
+.passValidationSectionBar {
+    width: 80%;
+    margin: 0;
+}
+
+.passValidationSectionBar span {
+    width: 98%;
+    height: 1vh;
+    display: block;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.411);
+    margin: 0;
+    border-radius: 10px;
+    transition: all 400ms ease-in-out;
+}
+
+.passValidationSection {
+    padding: 1vh .5vh;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-device-width: 600px) {
+    .sectionBox {
+        width: 90%;
+    }
+
+    .HederLogo {
+        background-image: var(--LogoTagMobileSize);
+        width: 48%;
+    }
+
+    .PsectionBox {
+        height: 10vh;
+    }
+
+    .PBall {
+        width: 20vw;
+        height: 20vw;
+        margin: 3vh 0 1vh 5vw;
+        font-size: 4vh;
+    }
+
+    .pDisplayName {
+        margin: 6vh auto auto 2vh;
+    }
+
+    .highligth {
+        font-size: larger;
+    }
+
+    .actionSection {
+        margin-top: 4vh;
+        margin-left: 15vh;
+    }
+
+    .AccessBtn {
+        padding: 1vh 1.5vh;
+        font-size: x-small;
+        margin: auto 0.5vh;
+    }
+
+    .AccessBtn i {
+        margin: 0 1vh 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .accountType {
+        font-size: x-small;
+    }
+
+    .AccountSection {
+        grid-template-columns: auto auto;
+    }
+
+    .requadBox {
+        width: 90%;
+        padding: .5vh .5vh;
+    }
+
+    .lable i {
+        margin-right: .5vh;
+    }
+
+    .displayDeta {
+        margin: .25vh auto .5vh 0vh;
+    }
+
+    .lable {
+        font-size: small;
+    }
+
+    .PaymentDeta th {
+        font-size: x-small;
+    }
+
+    .PaymentDeta td {
+        font-size: xx-small;
+    }
+
+    .FeaturesSection {
+        grid-template-columns: auto;
+        gap: 3vh;
+    }
+
+    .featureBox {
+        padding: 2vh 1vh;
+    }
+
+    .formeContain {
+        width: 75%;
+    }
+
+    .RemindBox {
+        width: 60%;
+    }
+
+    .Progresbar {
+        height: .5vh;
+    }
+
+    .TextSection {
+        padding: .5vh .25vh;
+    }
+
+    .gapS {
+        font-size: x-small;
+        font-weight: bold;
+        color: white;
+        width: fit-content;
+        display: block;
+        margin: .3vh auto;
+    }
+
+    .displayBoxSection {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+        width: 90%;
+        gap: 2vh;
+    }
+
+    .gridBox {
+        width: 80%;
+    }
+
+    .TextSection .FearureTitle {
+        padding-bottom: .25vh;
+    }
+
+    .HederLogoSection {
+        margin-left: auto;
+        width: 40%;
+    }
+
+    .HederLogoName {
+        font-size: medium;
+    }
+
+    .HederLogoName .subTitle {
+        font-size: xx-small;
+    }
+
+    .headerSection {
+        display: block;
+    }
+
+    input,
+    .inputBox {
+        font-size: 15px;
+    }
+
+    .NavigationList {
+        display: block;
+        padding: 1vh .5vh;
+        margin-top: .5vh;
+        margin-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 1;
+        transition: all 400ms ease-in-out;
+        width: 80%;
+        height: 80%;
+        overflow: auto;
+    }
+
+    .NavigationListContain {
+        background-color: transparent;
+        position: fixed;
+        margin-top: 1vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        width: 10%;
+        overflow: hidden;
+        transition: all 400ms ease-in-out;
+        border-radius: 0 0 10px 0;
+        height: 90vh;
+        display: block;
+    }
+
+    .Link {
+        color: white;
+        text-align: center;
+    }
+
+    .NavigationHambangle {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        border: 1px solid black;
+        width: 2vh;
+        height: 2vh;
+        margin-right: 1vh;
+        margin-top: 1vh;
+        color: white;
+    }
+
+    .HideMobile {
+        display: none !important;
+    }
+
+    .navigationHideMobile {
+        opacity: 0;
+    }
+
+    .showNavigarion {
+        background-color: #531db8;
+        width: 95% !important;
+    }
+
+    .copyrigth {
+        font-size: x-small;
+    }
+
+    .footerSection {
+        padding: .25vh 1vh;
+    }
+
+    .selectLink {
+        border-left: 5px solid navy !important;
+        border-bottom: 5px solid transparent !important;
+        border-top: 5px solid transparent !important;
+        border-right: 5px solid transparent !important;
+    }
+
+    .iMEJANCYUSEBTN {
+        width: fit-content;
+        height: 3vh;
+        margin: .5vh auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .iMEJANCYUSEBTNSECTION {
+        padding: 1vh .5vh;
+        border-top: 2px dotted #d3d3d36e;
+        display: block;
+    }
+
+    .EditDeta {
+        grid-template-columns: auto;
+    }
+
+    .EditDeta .requadBox {
+        padding: 1.5vh .5vh;
+    }
+
+    .iMEJANCYUSEBTN i {
+        margin-right: 1vh;
+    }
+
+    .AccountSectionoTHER {
+        grid-template-columns: auto;
+        gap: 3vh;
+    }
+
+    .ProfilePicBox {
+        width: 75%;
+    }
+
+    .profileImageControllSection {
+        padding: 1vh .25vh;
+    }
+}
